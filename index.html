@@ -1,23 +1,26 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Lohran Victor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio | Lohran Victor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body>
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
     <div class="site">
       <aside class="sidebar">
         <div class="profile">
           <div class="avatar-wrap">
-            <img src="style/img/profile.png" alt="Avatar" class="avatar" />
+            <img src="style/img/profile.png" alt="Foto de Lohran Victor" class="avatar" />
           </div>
           <h1>Lohran Victor</h1>
           <p class="role">Full-Stack Developer</p>
@@ -27,8 +30,7 @@
 
         <div class="info-list">
           <div class="info-item">
-            <div class="icon-box" aria-hidden>
-              <!-- envelope -->
+            <div class="icon-box" aria-hidden="true">
               <svg
                 width="20"
                 height="20"
@@ -52,7 +54,7 @@
           </div>
 
           <div class="info-item">
-            <div class="icon-box" aria-hidden>
+            <div class="icon-box" aria-hidden="true">
               <svg
                 width="20"
                 height="20"
@@ -76,8 +78,7 @@
           </div>
 
           <div class="info-item">
-            <div class="icon-box" aria-hidden>
-              <!-- location -->
+            <div class="icon-box" aria-hidden="true">
               <svg
                 width="20"
                 height="20"
@@ -102,9 +103,13 @@
           </div>
         </div>
 
-        <div class="socials">
-          <a href="https://github.com/Lv16" aria-label="github" class="social" target="_blank">
+        <div class="sidebar-actions">
+          <a class="sidebar-link" href="#portfolio">Ver projetos</a>
+          <a class="sidebar-link secondary" href="mailto:lohranvictor38@gmail.com">Entrar em contato</a>
+        </div>
 
+        <div class="socials">
+          <a href="https://github.com/Lv16" aria-label="GitHub" class="social" target="_blank" rel="noreferrer">
             <svg
               width="18"
               height="18"
@@ -118,7 +123,13 @@
               />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/lohran-victor" aria-label="linkedin" class="social" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/lohran-victor"
+            aria-label="LinkedIn"
+            class="social"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="18"
               height="18"
@@ -141,140 +152,162 @@
             <li><a href="#about" class="active">Sobre</a></li>
             <li><a href="#resume">Resumo</a></li>
             <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#cursos">Cursos</a></li>
           </ul>
         </header>
 
         <section id="about" class="section about">
-          <h2>Sobre Mim</h2>
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <span class="section-kicker">Portfólio profissional</span>
+              <h2>Construo sistemas internos, interfaces web e produtos com foco em clareza e operação real.</h2>
+              <p>
+                Desenvolvedor com experiência em aplicações corporativas, automações e interfaces
+                web. Atuo conectando front-end, back-end e regras de negócio para criar soluções
+                úteis, estáveis e fáceis de operar no dia a dia.
+              </p>
+              <div class="hero-actions">
+                <a class="button-primary" href="#portfolio">Explorar projetos</a>
+                <a class="button-secondary" href="https://www.linkedin.com/in/lohran-victor" target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <strong>3+</strong>
+                <span>anos atuando com tecnologia e suporte a sistemas</span>
+              </div>
+              <div class="metric-card">
+                <strong>4</strong>
+                <span>projetos em destaque com foco corporativo</span>
+              </div>
+              <div class="metric-card">
+                <strong>Full stack</strong>
+                <span>experiência com Python, Django, JavaScript e integrações</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-heading">
+            <span class="section-kicker">Sobre mim</span>
+            <h3>Base técnica sólida com visão de produto e operação</h3>
+          </div>
+
           <p>
-            Sou desenvolvedor web com experiência no desenvolvimento de sistemas
-            e interfaces para aplicações web. Atuo na criação de soluções
-            voltadas para organização de dados, automação de processos e
-            construção de ferramentas utilizadas em ambiente corporativo. Sou
-            formado em Gestão da Tecnologia da Informação e atualmente curso
-            Ciência da Computação, o que me permite unir conhecimentos de
-            gestão, tecnologia e desenvolvimento de software na construção de
-            soluções mais eficientes. Tenho experiência com tecnologias como
-            HTML, CSS, JavaScript, Python e Django, participando do
-            desenvolvimento de sistemas administrativos, dashboards e aplicações
-            internas. Também busco constantemente aprimorar minhas habilidades
-            em desenvolvimento front-end, explorando novas ferramentas e
-            frameworks do ecossistema moderno. Meu objetivo é continuar
-            evoluindo como desenvolvedor, contribuindo para projetos que
-            envolvam interfaces bem estruturadas, boa experiência do usuário e
-            soluções tecnológicas que realmente façam diferença no dia a dia das
-            pessoas.
+            Sou formado em Gestão da Tecnologia da Informação e atualmente curso Ciência da
+            Computação. Essa combinação me ajuda a unir visão de negócio, organização de processos e
+            implementação técnica. Tenho experiência com HTML, CSS, JavaScript, Python e Django,
+            participando da criação de dashboards, sistemas administrativos e aplicações internas.
+            Também venho expandindo minha base em desenvolvimento front-end moderno para evoluir a
+            qualidade visual e a experiência do usuário nos produtos que entrego.
           </p>
 
-          <h3>Habilidades</h3>
-          <div class="skills">
-            <ul class="skill-list">
-              <li class="skill-chip">HTML</li>
-              <li class="skill-chip">CSS</li>
-              <li class="skill-chip">JavaScript</li>
-              <li class="skill-chip">Python</li>
-              <li class="skill-chip">Django</li>
-            </ul>
-          </div>
-          <h3>Em estudo</h3>
-          <div class="skills study">
-            <ul class="study-list">
-              <li class="study-chip">React — Em estudo</li>
-              <li class="study-chip">Angular — Em estudo</li>
-              <li class="study-chip">TypeScript — Em estudo</li>
-            </ul>
+          <div class="skill-columns">
+            <div>
+              <h3>Habilidades</h3>
+              <div class="skills">
+                <ul class="skill-list">
+                  <li class="skill-chip">HTML</li>
+                  <li class="skill-chip">CSS</li>
+                  <li class="skill-chip">JavaScript</li>
+                  <li class="skill-chip">Python</li>
+                  <li class="skill-chip">Django</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3>Em estudo</h3>
+              <div class="skills study">
+                <ul class="study-list">
+                  <li class="study-chip">React</li>
+                  <li class="study-chip">Angular</li>
+                  <li class="study-chip">TypeScript</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
         <section id="services" class="section services">
-          <h3>O Que Faço</h3>
+          <div class="section-heading">
+            <span class="section-kicker">Como contribuo</span>
+            <h3>Entrego aplicações úteis, consistentes e pensadas para uso real</h3>
+          </div>
+
           <div class="cards">
             <article class="card">
-              <div class="card-icon">💻</div>
+              <div class="card-icon" aria-hidden="true">01</div>
               <h4>Interfaces Web</h4>
-              <p>
-                Criação de interfaces acessíveis e responsivas, focadas em
-                experiência do usuário.
-              </p>
+              <p>Interfaces responsivas, acessíveis e organizadas para facilitar navegação e leitura.</p>
             </article>
 
             <article class="card">
-              <div class="card-icon">⚙️</div>
+              <div class="card-icon" aria-hidden="true">02</div>
               <h4>Sistemas Web</h4>
-              <p>
-                Arquitetura e implementação de sistemas web robustos e
-                escaláveis.
-              </p>
+              <p>Construção de sistemas internos com foco em eficiência operacional e manutenção simples.</p>
             </article>
 
             <article class="card">
-              <div class="card-icon">🔗</div>
+              <div class="card-icon" aria-hidden="true">03</div>
               <h4>Integração com APIs</h4>
-              <p>
-                Conexão de serviços e consumo de APIs REST/GraphQL com boas
-                práticas de segurança.
-              </p>
+              <p>Consumo e exposição de APIs REST para conectar dados, serviços e fluxos corporativos.</p>
             </article>
 
             <article class="card">
-              <div class="card-icon">🚀</div>
+              <div class="card-icon" aria-hidden="true">04</div>
               <h4>Automação</h4>
-              <p>
-                Automação de tarefas e pipelines para acelerar desenvolvimento e
-                deploy.
-              </p>
+              <p>Automação de tarefas e processos para reduzir esforço manual e aumentar previsibilidade.</p>
             </article>
           </div>
         </section>
 
         <section id="resume" class="section resume">
-          <h3>Resumo - Experiências Profissionais</h3>
+          <div class="section-heading">
+            <span class="section-kicker">Experiência</span>
+            <h3>Trajetória profissional</h3>
+          </div>
 
           <article class="resume-item">
-            <h4>Ambipar Group — Ajudante Operacional Jr | Dez/2025 – Atual</h4>
+            <h4>Ambipar Group | Ajudante Operacional Jr</h4>
+            <span class="resume-period">Dez/2025 - Atual</span>
             <ul>
-              <li>
-                Desenvolvimento e manutenção de sistemas internos corporativos
-              </li>
-              <li>Criação de interfaces modernas e responsivas</li>
-              <li>Desenvolvimento de APIs REST com Python e Django</li>
-              <li>
-                Implementação de regras de negócio e integrações com banco de
-                dados
-              </li>
-              <li>
-                Automação de processos corporativos e melhoria contínua de
-                sistemas
-              </li>
+              <li>Desenvolvimento e manutenção de sistemas internos corporativos.</li>
+              <li>Criação de interfaces modernas e responsivas.</li>
+              <li>Desenvolvimento de APIs REST com Python e Django.</li>
+              <li>Implementação de regras de negócio e integrações com banco de dados.</li>
+              <li>Automação de processos corporativos e melhoria contínua de sistemas.</li>
             </ul>
           </article>
 
           <article class="resume-item">
-            <h4>Ambipar Group — Jovem Aprendiz de TI | Nov/2024 – Dez/2025</h4>
+            <h4>Ambipar Group | Jovem Aprendiz de TI</h4>
+            <span class="resume-period">Nov/2024 - Dez/2025</span>
             <ul>
-              <li>Desenvolvimento de aplicações internas e automações</li>
-              <li>Suporte técnico em hardware, software e infraestrutura</li>
-              <li>Controle de ativos e apoio à rede corporativa</li>
+              <li>Desenvolvimento de aplicações internas e automações.</li>
+              <li>Suporte técnico em hardware, software e infraestrutura.</li>
+              <li>Controle de ativos e apoio à rede corporativa.</li>
             </ul>
           </article>
 
           <article class="resume-item">
-            <h4>
-              Shama Solução em Tecnologia — Estagiário de Suporte Técnico | 2022
-              – 2024
-            </h4>
+            <h4>Shama Solução em Tecnologia | Estagiário de Suporte Técnico</h4>
+            <span class="resume-period">2022 - 2024</span>
             <ul>
-              <li>Suporte técnico remoto e presencial</li>
-              <li>Manutenção de hardware, redes e sistemas</li>
-              <li>
-                Instalação, configuração e documentação de ambientes de TI
-              </li>
+              <li>Suporte técnico remoto e presencial.</li>
+              <li>Manutenção de hardware, redes e sistemas.</li>
+              <li>Instalação, configuração e documentação de ambientes de TI.</li>
             </ul>
           </article>
         </section>
 
         <section id="portfolio" class="section portfolio">
-          <h3>Projetos</h3>
+          <div class="section-heading">
+            <span class="section-kicker">Projetos</span>
+            <h3>Aplicações desenvolvidas para cenários corporativos</h3>
+          </div>
 
           <div class="portfolio-grid">
             <article
@@ -283,22 +316,22 @@
               data-images="style/img/synchro_web/home.png,style/img/synchro_web/dashboard.png,style/img/synchro_web/home_equipamentos.png"
             >
               <div class="project-thumb">
-                <img
-                  src="style/img/synchro_web/home.png"
-                  alt="Synchro - Gestão Operacional"
-                />
+                <img src="style/img/synchro_web/home.png" alt="Synchro - Gestão Operacional" />
               </div>
               <div class="project-info">
-                <h4>Synchro — Gestão Operacional</h4>
-                <small class="badge">Empresa — Ambipar</small>
+                <div class="project-meta">
+                  <small class="badge">Ambipar</small>
+                  <span class="project-type">Sistema web</span>
+                </div>
+                <h4>Synchro | Gestão Operacional</h4>
                 <p class="muted">
-                  Sistema de gestão operacional usado internamente para controle
-                  de processos.
+                  Sistema interno para controle de processos operacionais, acompanhamento e gestão
+                  visual das rotinas.
                 </p>
                 <ul class="tech-badges">
                   <li>Python</li>
                   <li>Django</li>
-                  <li>API Rest</li>
+                  <li>API REST</li>
                 </ul>
               </div>
             </article>
@@ -309,20 +342,21 @@
               data-images="style/img/synchro_mobile/home.png,style/img/synchro_mobile/home_offline.png,style/img/synchro_mobile/login.png"
             >
               <div class="project-thumb">
-                <img
-                  src="style/img/synchro_mobile/home.png"
-                  alt="Synchro - Mobile"
-                />
+                <img src="style/img/synchro_mobile/home.png" alt="Synchro - Mobile" />
               </div>
               <div class="project-info">
-                <h4>Synchro — Mobile</h4>
-                <small class="badge">Empresa — Ambipar</small>
+                <div class="project-meta">
+                  <small class="badge">Ambipar</small>
+                  <span class="project-type">Aplicativo mobile</span>
+                </div>
+                <h4>Synchro | Mobile</h4>
                 <p class="muted">
-                  Aplicativo móvel para operadores com sincronização e alertas
-                  em tempo real.
+                  Aplicativo para operadores com sincronização de dados e alertas em tempo real em
+                  campo.
                 </p>
                 <ul class="tech-badges">
-                  <li>Flutter (Dart)</li>
+                  <li>Flutter</li>
+                  <li>Dart</li>
                   <li>API REST</li>
                 </ul>
               </div>
@@ -334,16 +368,16 @@
               data-images="style/img/kronos/folha_pdf.png,style/img/kronos/home.png,style/img/kronos/login.png"
             >
               <div class="project-thumb">
-                <img
-                  src="style/img/kronos/folha_pdf.png"
-                  alt="Kronos - Folha de Ponto"
-                />
+                <img src="style/img/kronos/folha_pdf.png" alt="Kronos - Folha de Ponto" />
               </div>
               <div class="project-info">
-                <h4>Kronos — Folha de Ponto</h4>
-                <small class="badge">Empresa — Ambipar</small>
+                <div class="project-meta">
+                  <small class="badge">Ambipar</small>
+                  <span class="project-type">Sistema RH</span>
+                </div>
+                <h4>Kronos | Folha de Ponto</h4>
                 <p class="muted">
-                  Sistema de ponto eletrônico e gestão de jornadas integrado ao
+                  Sistema para ponto eletrônico e gestão de jornadas, integrado a fluxos internos de
                   RH.
                 </p>
                 <ul class="tech-badges">
@@ -359,17 +393,17 @@
               data-images="style/img/reserveit/home.png,style/img/reserveit/home2.png"
             >
               <div class="project-thumb">
-                <img
-                  src="style/img/reserveit/home.png"
-                  alt="ReserveIT - Equipamentos"
-                />
+                <img src="style/img/reserveit/home.png" alt="ReserveIT - Equipamentos" />
               </div>
               <div class="project-info">
-                <h4>ReserveIT — Equipamentos</h4>
-                <small class="badge">Empresa — Ambipar</small>
+                <div class="project-meta">
+                  <small class="badge">Ambipar</small>
+                  <span class="project-type">Controle interno</span>
+                </div>
+                <h4>ReserveIT | Equipamentos</h4>
                 <p class="muted">
-                  Ferramenta para reserva e controle de equipamentos
-                  corporativos.
+                  Ferramenta de reserva e rastreio de equipamentos corporativos com foco em controle
+                  e disponibilidade.
                 </p>
                 <ul class="tech-badges">
                   <li>Python</li>
@@ -379,7 +413,6 @@
             </article>
           </div>
 
-          <!-- lightbox/modal -->
           <div id="lightbox" class="lightbox" aria-hidden="true">
             <div class="lightbox-inner">
               <button class="lightbox-close" aria-label="Fechar">×</button>
@@ -394,7 +427,11 @@
         </section>
 
         <section id="cursos" class="section cursos">
-          <h3>Cursos</h3>
+          <div class="section-heading">
+            <span class="section-kicker">Formação contínua</span>
+            <h3>Cursos concluídos e em andamento</h3>
+          </div>
+
           <div class="courses">
             <div class="courses-group">
               <h4 class="group-title">Concluídos</h4>
@@ -442,7 +479,7 @@
               <ul class="courses-list">
                 <li class="course-item">
                   <div class="course-main">
-                    <strong>Desenvolvimento Full-Stack</strong>
+                    <strong>Desenvolvimento Full Stack</strong>
                     <span class="course-provider">Origamid</span>
                   </div>
                   <span class="course-status">Em andamento</span>
